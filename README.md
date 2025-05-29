@@ -2,7 +2,7 @@
 Autor: Rizea Adelina-Maria
 
 ## Descriere
-Scopul aplicației este să permită utilizatorilor să caute diferite rase de câini și informații detaliate despre ele, văzând în același timp și imagini cu acestea. În funcție de temperamentul rasei căutate, ei vor primi recomandări și vor putea vizualiza pe rând paginile raselor recomandate. De asemenea, utilizatorii vor putea adăuga diferite rase la favorite pentru a le vizualiza mai târziu, vor putea lăsa review-uri și vor putea descărca imaginea unei rase dorite. Pentru realizarea aplicației se va folosi thedogapi (https://api.thedogapi.com/). 
+Scopul aplicației este de a permite utilizatorilor să caute diferite rase de câini și informații detaliate despre ele, vizualizând în același timp și imagini cu acestea. În funcție de temperamentul rasei căutate, ei vor primi recomandări și vor putea vedea pe rând paginile cu detalii despre aceste rase. De asemenea, utilizatorii vor putea adăuga diferite rase la favorite pentru a le vizualiza mai târziu, vor putea lăsa review-uri și vor avea posibilitatea de a descărca imaginea unei rase dorite. Pentru realizarea aplicației se va folosi thedogapi (https://api.thedogapi.com/). 
 
 ## Ecrane și funcționalități ##
 #### Ecranul principal ####
@@ -14,7 +14,7 @@ Scopul aplicației este să permită utilizatorilor să caute diferite rase de c
 - După logare, utilizatorul poate introduce numele unei rase în câmpul de căutare.
 - La selectarea unei rase, aplicația va deschide un nou ecran cu detalii specifice și o imagine reprezentativă.
 - Pe acest ecran, utilizatorul poate:
-  - vizualiza informații despre rasa căutata(greutate, dimensiune, temperament, tip);
+  - vizualiza informații despre rasa căutata(greutate, dimensiune, temperament, tip, review dacă este adăugat);
   - adăuga rasa la favorite;
   - adăuga un review;
   - descărca imaginea de pe ecran;
@@ -42,6 +42,6 @@ Scopul aplicației este să permită utilizatorilor să caute diferite rase de c
 ## Structura ##
 ### Structura proiectului respectă arhitectura recomandată: ###
 - Datele (modele, DAO, repository, Retrofit) sunt grupate în pachete (data/api/ și data/model). De asemenea, există un repository pentru gestionarea accesului la date.
-- Logica de business este gestionată în ViewModel-uri, fiecare ecran având propriul ViewModel și UiState care pot fi găsite în ui/screens.
-- Detaliile pentru interfața cu utilizatorul se află în pachetul ui/screens, unde fiecare ecran are propriul fișier Composable.
+- Logica de business este gestionată în ViewModel-uri, fiecare ecran având propriul ViewModel și UiState care pot fi găsite în ui/.
+- Detaliile pentru interfața cu utilizatorul se află în pachetul ui/screens, unde fiecare ecran are propriul Composable.
 - Navigarea este centralizată în MainActivity.
