@@ -14,6 +14,7 @@ Scopul aplicației este să permită utilizatorilor să caute diferite rase de c
 - După logare, utilizatorul poate introduce numele unei rase în câmpul de căutare.
 - La selectarea unei rase, aplicația va deschide un nou ecran cu detalii specifice și o imagine reprezentativă.
 - Pe acest ecran, utilizatorul poate:
+  - vizualiza informații despre rasa căutata(greutate, dimensiune, temperament, tip);
   - adăuga rasa la favorite;
   - adăuga un review;
   - descărca imaginea de pe ecran;
@@ -23,10 +24,11 @@ Scopul aplicației este să permită utilizatorilor să caute diferite rase de c
 #### Ecranul pentru favorite ####
 - Va exista un al treilea ecran dedicat vizualizării raselor salvate la favorite.
 - Vor fi afișate review-urile adăugate de utilizator pentru fiecare rasă favorită.
-- Rasele adăugate la favorite vor putea fi șterse din listă.
+- Rasele vor putea fi șterse din listă.
 
-#### Alte funcționalități ####
+#### Alte caracteristici ####
 - Userii și rasele adăugate la favorite vor fi salvate în baza de date locală, utilizând Room.
+- Fiecare utilizator are acces doar la propria listă de favorite și la recenziile pe care le-a adăugat.
 
 ## Tehnologii și API ##
 ### Tehnologii ###
@@ -35,7 +37,7 @@ Scopul aplicației este să permită utilizatorilor să caute diferite rase de c
 ### Endpoint-urile oferite de API-ul ales și folosite în cadrul aplicației sunt: ###
 - https://api.thedogapi.com/v1/images/search?breed_id={id}: informații despre o anumită rasă
 - https://api.thedogapi.com/v1/images/search/: imagine cu o rasă oarecare
-- https://api.thedogapi.com/v1/breeds/: informații despre toate rasele (folosit pentru a extrage id-ul unei rase pentru obținerea pozei și pentru a extrage informațiile necesare)
+- https://api.thedogapi.com/v1/breeds/: informații despre toate rasele (folosit pentru a extrage id-ul unei rase pentru obținerea pozei și a informațiilor necesare)
 
 ## Structura ##
 ### Structura proiectului respectă arhitectura recomandată: ###
